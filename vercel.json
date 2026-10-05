@@ -1,0 +1,5 @@
+{
+  "rewrites": [
+    { "source": "/historias/:slug", "destination": "/historia.html" }
+  ]
+}

@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Histórias de Volta · Instituto Landim</title>
+  <meta name="description" content="Conheça histórias reais de pacientes do Instituto Landim que superaram a dor e voltaram a fazer o que amam. Mais vida. Menos dor.">
+  <meta name="theme-color" content="#3d1153">
+  <link rel="icon" type="image/png" href="/assets/img/favicon.png">
+  <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:site_name" content="Instituto Landim">
+  <meta property="og:title" content="Histórias de Volta · Instituto Landim">
+  <meta property="og:description" content="Histórias reais de quem superou a dor e voltou a fazer o que ama. Mais vida. Menos dor.">
+  <meta property="og:image" content="/assets/img/og-historias-de-volta.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://drive.google.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=Great+Vibes&family=Outfit:wght@300..800&display=swap">
+  <link rel="stylesheet" href="/assets/css/estilo.css">
+
+  <script src="/assets/js/config.js" defer></script>
+  <script src="/assets/js/historias.js" defer></script>
+  <script src="/assets/js/app.js" defer></script>
+</head>
+<body data-pagina="inicio">
+  <a class="pular" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="topo">
+    <div class="container topo__barra">
+      <a class="topo__logo" href="/" aria-label="Instituto Landim — início da campanha">
+        <img src="/assets/img/logo-landim.png" alt="Instituto Landim" width="806" height="170">
+      </a>
+      <nav class="menu" id="menu" aria-label="Principal">
+        <a href="/#inicio">Início</a>
+        <a href="/#historias">Histórias</a>
+        <a href="/#conte-sua-historia">Conte sua história</a>
+        <a href="/#contato">Contato</a>
+        <a href="https://institutolandim.com.br/" target="_blank" rel="noopener">Sobre o Instituto</a>
+      </nav>
+      <a class="botao botao--primario botao--pequeno topo__cta" data-wa="agendar" href="https://wa.me/5571999723787" target="_blank" rel="noopener">Agendar consulta</a>
+      <button class="topo__abrir" type="button" aria-expanded="false" aria-controls="menu" aria-label="Abrir menu">
+        <svg class="icone" aria-hidden="true"><use href="/assets/img/icones.svg#menu"></use></svg>
+      </button>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <!-- ETAPA 1 — ENTRADA -->
+    <section class="hero" id="inicio">
+      <svg class="linhas-ouro" viewBox="0 0 1440 640" preserveAspectRatio="none" aria-hidden="true">
+        <path d="M-40 120 C 300 20, 520 260, 820 120 S 1300 -40, 1500 90" />
+        <path d="M-40 600 C 260 470, 640 640, 980 520 S 1340 430, 1500 560" />
+      </svg>
+      <div class="container hero__grade">
+        <div class="hero__texto">
+          <p class="sobretitulo">Campanha</p>
+          <h1 class="campanha">
+            <span class="campanha__a">Histórias</span>
+            <span class="campanha__b">de <em>Volta</em></span>
+          </h1>
+          <p class="slogan">Mais vida. Menos dor.</p>
+          <h2 class="hero__pergunta">O que você quer voltar a fazer?</h2>
+          <p class="hero__lead">Conheça histórias reais de pacientes do Instituto Landim, organizadas por momentos de vida. Pessoas que superaram a dor e voltaram a fazer o que amam.</p>
+          <div class="acoes">
+            <a class="botao botao--primario" href="#historias">
+              <svg class="icone" aria-hidden="true"><use href="/assets/img/icones.svg#play"></use></svg>
+              Ver histórias
+            </a>
+            <a class="botao botao--contorno" href="#conte-sua-historia">Compartilhar minha história</a>
+          </div>
+        </div>
+        <div class="hero__destaques">
+          <ul class="carrossel" id="destaques" aria-label="Histórias em destaque"></ul>
+          <div class="carrossel__pontos" id="destaques-pontos"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ETAPA 2 — EXPLORAÇÃO -->
+    <section class="secao secao--categorias" id="historias">
+      <div class="container">
+        <div class="cabeca">
+          <p class="sobretitulo">Histórias reais. Mais vida, menos dor.</p>
+          <h2 class="titulo">Escolha uma história parecida com a sua rotina</h2>
+          <p class="cabeca__sub">Pessoas reais. Desafios reais. Novos começos possíveis.</p>
+          <p class="assinatura" aria-hidden="true">Cada história é um recomeço</p>
+        </div>
+        <ul class="categorias" id="categorias"></ul>
+      </div>
+    </section>
+
+    <section class="secao secao--biblioteca" id="biblioteca">
+      <div class="container">
+        <div class="cabeca cabeca--linha">
+          <div>
+            <p class="sobretitulo">Mais histórias, mais vidas em movimento</p>
+            <h2 class="titulo">Biblioteca de histórias</h2>
+          </div>
+          <p class="contador" id="contador" aria-live="polite"></p>
+        </div>
+        <div class="filtros" id="filtros" role="group" aria-label="Filtrar por momento de vida"></div>
+        <ul class="grade" id="grade"></ul>
+        <div class="grade__mais">
+          <button class="botao botao--contorno" type="button" id="carregar-mais">Ver mais histórias</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ETAPA 4 — PARTICIPAÇÃO -->
+    <section class="secao secao--conte" id="conte-sua-historia">
+      <div class="container conte">
+        <div class="conte__principal">
+          <p class="sobretitulo">Participe da campanha</p>
+          <h2 class="titulo-serif">Conte sua História <em>de Volta</em></h2>
+          <p class="conte__lead">Sua experiência pode inspirar outras pessoas a também encontrarem mais movimento, mais saúde e mais vida. Compartilhe sua história com a gente pelo WhatsApp do Instituto.</p>
+          <ul class="formatos">
+            <li>
+              <a class="formato" data-wa="texto" href="https://wa.me/5571999723787" target="_blank" rel="noopener">
+                <span class="formato__icone"><svg class="icone" aria-hidden="true"><use href="/assets/img/icones.svg#texto"></use></svg></span>
+                <strong>Enviar texto</strong>
+                <span>Conte sua história escrevendo para nós.</span>
+                <span class="formato__seta"><svg class="icone" aria-hidden="true"><use href="/assets/img/icones.svg#seta"></use></svg></span>
+              </a>
+            </li>
+            <li>
+              <a class="formato" data-wa="audio" href="https://wa.me/5571999723787" target="_blank" rel="noopener">
+                <span class="formato__icone"><svg class="icone" aria-hidden="true"><use href="/assets/img/icones.svg#audio"></use></svg></span>
+                <strong>Enviar áudio</strong>
+                <span>Grave um áudio e compartilhe sua experiência.</span>
+                <span class="formato__seta"><svg class="icone" aria-hidden="true"><use href="/assets/img/icones.svg#seta"></use></svg></span>
+              </a>
+            </li>
+            <li>
+              <a class="formato" data-wa="video" href="https://wa.me/5571999723787" target="_blank" rel="noopener">
+                <span class="formato__icone"><svg class="icone" aria-hidden="true"><use href="/assets/img/icones.svg#video"></use></svg></span>
+                <strong>Enviar vídeo</strong>
+                <span>Grave um vídeo e inspire outras pessoas.</span>
+                <span class="formato__seta"><svg class="icone" aria-hidden="true"><use href="/assets/img/icones.svg#seta"></use></svg></span>
+              </a>
+            </li>
+          </ul>
+          <p class="conte__nota">Você será direcionado ao WhatsApp do Instituto Landim. Sua história só é publicada com a sua autorização.</p>
+          <p class="manuscrito" aria-hidden="true">Mais histórias. Mais movimento. Mais vida.</p>
+        </div>
+
+        <aside class="conte__lateral">
+          <div class="painel">
+            <div class="painel__cabeca">
+              <h3>Histórias que já inspiram</h3>
+              <a class="link-seta" href="#biblioteca">Ver todas <svg class="icone" aria-hidden="true"><use href="/assets/img/icones.svg#seta"></use></svg></a>
+            </div>
+            <ul class="inspiram" id="inspiram"></ul>
+          </div>
+          <div class="painel painel--opiniao">
+            <p class="estrelas" aria-hidden="true">
+              <svg class="icone"><use href="/assets/img/icones.svg#estrela"></use></svg><svg class="icone"><use href="/assets/img/icones.svg#estrela"></use></svg><svg class="icone"><use href="/assets/img/icones.svg#estrela"></use></svg><svg class="icone"><use href="/assets/img/icones.svg#estrela"></use></svg><svg class="icone"><use href="/assets/img/icones.svg#estrela"></use></svg>
+            </p>
+            <h3>Sua opinião nos fortalece</h3>
+            <p>Já é paciente? Sua avaliação no Google ajuda outras pessoas a encontrarem o cuidado certo.</p>
+            <a class="botao botao--ouro botao--pequeno" data-link="avaliacaoGoogle" href="https://goo.gl/maps/nushXyeAfezfztxu9" target="_blank" rel="noopener">Avaliar no Google</a>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <div id="cta"></div>
+  </main>
+
+  <footer class="rodape" id="rodape"></footer>
+
+  <dialog class="modal" id="modal" closedby="any" aria-labelledby="modal-titulo"></dialog>
+  <p class="aviso" id="aviso" role="status" aria-live="polite"></p>
+</body>
+</html>
